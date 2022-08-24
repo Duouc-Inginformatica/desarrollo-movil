@@ -1,7 +1,0 @@
-{
-  "name": "DuberUC",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
