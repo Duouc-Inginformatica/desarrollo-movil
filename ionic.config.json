@@ -1,0 +1,7 @@
+{
+  "name": "TransporteDUOC",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
