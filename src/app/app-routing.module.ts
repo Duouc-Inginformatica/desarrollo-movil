@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'mconductor',
     pathMatch: 'full'
   },
   {
@@ -46,6 +46,10 @@ const routes: Routes = [
   {
     path: 'prototipo1',
     loadChildren: () => import('./prototipo1/prototipo1.module').then( m => m.Prototipo1PageModule)
+  },
+  {
+    path: 'login1',
+    loadChildren: () => import('./login1/login1.module').then( m => m.Login1PageModule)
   },
 ];
 

@@ -10,7 +10,7 @@ import { Router,NavigationExtras } from '@angular/router';//permite que funcione
   styleUrls: ['./registro.page.scss'],
 })
 
-export class RegistroGeneral  {
+export class RegistroPage  {
     
     usuario = new FormGroup({
       user: new FormControl('',[Validators.required, Validators.minLength(4),Validators.maxLength(8)]),
@@ -21,7 +21,9 @@ export class RegistroGeneral  {
       pass: new FormControl('',[Validators.required, Validators.minLength(4),Validators.maxLength(4)]),
     });
   
-  constructor() { }
+    constructor(private navCtrl: NavController,private router: Router) { } 
+
+    
 
  
 

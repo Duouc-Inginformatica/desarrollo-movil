@@ -1,15 +1,27 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationExtras } from '@angular/router';
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-mpasajero',
   templateUrl: './mpasajero.page.html',
   styleUrls: ['./mpasajero.page.scss'],
 })
-export class MpasajeroPage implements OnInit {
+export class MpasajeroPage  {
 
-  constructor() { }
+  userPasajero: any; //objeto que recibe la info. 
 
-  ngOnInit() {
+constructor(private activeroute: ActivatedRoute, private router: Router){
+
+  this.activeroute.queryParams.subscribe(params => {
+    if (this.router.getCurrentNavigation().extras.state) {
+      this.userPasajero = this.router.getCurrentNavigation().extras.state.user; 
+      console.log("info recibida" + this.userPasajero)     
+      }
+    });
   }
 
 }
+
+  
+

@@ -8,15 +8,25 @@ import { Router,NavigationExtras } from '@angular/router';//permite que funcione
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
-export class Datosusers {
-value = "passUsers"
-Usuario = new FormGroup({
-  user: new FormControl('', [Validators.required, Validators.minLength(4)]),
-  password: new FormControl('', [Validators.required, Validators.minLength(8)]),
+export class LoginPage {
+
+UsuarioP = new FormGroup({
+  userP: new FormControl('', [Validators.required, Validators.minLength(4)]),
+  passwordP: new FormControl('', [Validators.required, Validators.minLength(8)]),
 });
 
 constructor(private navCtrl: NavController,private router: Router) { }
 
+sendDetailsWithState() {
+  let navigationExtras: NavigationExtras = {
+    state: {user: this.UsuarioP.value.userP}
+    };
+    this.router.navigate(['/mpasajero'],navigationExtras);      
+}
 
+InfoaMpasajero(){
+  console.log("Funciona");
+  this.sendDetailsWithState();
+}
 
 }
