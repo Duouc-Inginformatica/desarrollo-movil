@@ -10,23 +10,28 @@ import { Router,NavigationExtras } from '@angular/router';//permite que funcione
 })
 export class LoginPage {
 
-UsuarioP = new FormGroup({
-  userP: new FormControl('', [Validators.required, Validators.minLength(4)]),
-  passwordP: new FormControl('', [Validators.required, Validators.minLength(8)]),
-});
 
-constructor(private navCtrl: NavController,private router: Router) { }
+  usuario = new FormGroup({
+    userp: new FormControl('',[Validators.required, Validators.minLength(4),Validators.maxLength(8)]),
+    passp: new FormControl('',[Validators.required, Validators.minLength(8)]),
+  });
 
-sendDetailsWithState() {
-  let navigationExtras: NavigationExtras = {
-    state: {user: this.UsuarioP.value.userP}
-    };
-    this.router.navigate(['/mpasajero'],navigationExtras);      
-}
+  constructor(private navCtrl: NavController,private router: Router) { }   //constructor que genrecio 
+  
+    
+  //funcion que permite el envio de datos
+  sendDetailsWithState() {
+    let navigationExtras: NavigationExtras = {
+      state: {userp: this.usuario.value.userp}
+      };
+      this.router.navigate(['/mpasajero'],navigationExtras);      
+  }
 
-InfoaMpasajero(){
-  console.log("Funciona");
-  this.sendDetailsWithState();
-}
+  //Metodo para navegar desde un metodo llamado desde el html
+  InfoaMconductor(){
+    console.log("entramos al metodo");
+    this.sendDetailsWithState();
+    // this.navCtrl.navigateForward('/home');
+  }
 
 }
