@@ -6,6 +6,9 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 
+import { LottieAn } from 'ng-lottie';
+
+
 
 @NgModule({
   imports: [

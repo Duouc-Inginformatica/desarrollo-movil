@@ -28,6 +28,7 @@
     "@ionic/angular": "^6.2.4",
     "cordova-plugin-lottie-splashscreen": "^0.9.6",
     "lottie-web": "^5.9.6",
+    "ng-lottie": "^0.3.2",
     "ngx-lottie": "^8.2.2",
     "rxjs": "~7.5.6",
     "tslib": "^2.4.0",
