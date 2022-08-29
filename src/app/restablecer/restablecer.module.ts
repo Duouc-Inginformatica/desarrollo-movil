@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PrototipoPageRoutingModule } from './prototipo-routing.module';
+import { RestablecerPageRoutingModule } from './restablecer-routing.module';
 
-import { PrototipoPage } from './prototipo.page';
+import { RestablecerPage } from './restablecer.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PrototipoPageRoutingModule
+    RestablecerPageRoutingModule
   ],
-  declarations: [PrototipoPage]
+  declarations: [RestablecerPage]
 })
-export class PrototipoPageModule {}
+export class RestablecerPageModule {}
