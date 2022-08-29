@@ -16,7 +16,7 @@ constructor(private activeroute: ActivatedRoute, private router: Router){
 
   this.activeroute.queryParams.subscribe(params => {
     if (this.router.getCurrentNavigation().extras.state) {
-      this.userPasajero = this.router.getCurrentNavigation().extras.state.userp; 
+      this.userPasajero = this.router.getCurrentNavigation().extras.state.user; 
       console.log("info recibida" + this.userPasajero)     
       }
     });
