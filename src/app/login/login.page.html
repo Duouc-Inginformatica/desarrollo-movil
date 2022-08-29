@@ -1,34 +1,38 @@
+<!--Página Login del menú Conductor-->
+
 <ion-header>
   <ion-toolbar>
-    <ion-title>Login</ion-title>
+    <ion-title>Iniciar sesión</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
-  <ion-card class="ion-text-center">
+<ion-content class="bg-image no-scroll" padding>
+  <ion-card class="ion-text-center card">
     <ion-card-header>
-      <ion-card-subtitle>Aqui comienza todo</ion-card-subtitle>
-      <ion-card-title>SkeletonApp</ion-card-title>
-    </ion-card-header>
+      <ion-card-subtitle>TeLlevoAPP</ion-card-subtitle>
+      </ion-card-header>
   
-    <ion-card-content>
-      Bienvenidos
-    </ion-card-content>
-  </ion-card>
+      <ion-card-content>
+        <h3>Menú Pasajero</h3>
+       </ion-card-content>
+     </ion-card>
 
-<form [formGroup]="usuario">
+
+<form [formGroup]="usuario" id="formLogin">
   <div>
-    <ion-item>
-      <ion-label position="floating">Enter User</ion-label>
+    <ion-item id="formDetails">
+      <ion-label position="floating">Usuario</ion-label>
       <ion-input  type="text" formControlName="userp"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="floating">Enter Pass</ion-label>
+      <ion-label position="floating">Contraseña</ion-label>
       <ion-input type="password" formControlName="passp"></ion-input>
     </ion-item>
     </div>
-  
+
+    <br>
+    <br>
+   
     <div >
       <ion-button expand="full"  type="submit" [disabled]="!usuario.valid" routerLink="/home">RouterLink</ion-button>
     </div>
