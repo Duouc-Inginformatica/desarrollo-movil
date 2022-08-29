@@ -15,6 +15,7 @@ export class RestablecerPage {
     correo: new FormControl('',[Validators.required,Validators.email])
   })
 
+<<<<<<< HEAD
   constructor(private navCtrl: NavController,private router: Router, private alertController: AlertController) { } 
 
 
@@ -38,6 +39,9 @@ export class RestablecerPage {
 
 
   
+=======
+  constructor(private navCtrl: NavController,private router: Router) { } 
+>>>>>>> 7756f45 (v2 logica registro y logica restablecer)
 
   
 
