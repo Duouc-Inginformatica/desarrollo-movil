@@ -4,6 +4,7 @@ import { FormControl,FormGroup,Validators   } from '@angular/forms';//import que
 import { Router,NavigationExtras } from '@angular/router';//permite que funcione las f.de envio de info
 
 
+
 @Component({
   selector: 'app-login1',
   templateUrl: './login1.page.html',
