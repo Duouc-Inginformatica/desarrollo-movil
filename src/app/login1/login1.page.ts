@@ -19,16 +19,16 @@ export class Login1Page {
   
   constructor(private navCtrl: NavController,private router: Router) { }
   
-  sendInfo() {
+ /*  sendInfo() {
     let navigationExtras: NavigationExtras = {
       state: {user: this.usuario.value.userc}
       };
       this.router.navigate(['/mconductor'],navigationExtras);      
-  }
+  } */
   
-  InfoaMconductor(){
+ /*  InfoaMconductor(){
     console.log("Funciona");
     this.sendInfo();
-  }
+  } */
   
   }

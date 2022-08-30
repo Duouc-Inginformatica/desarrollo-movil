@@ -15,7 +15,29 @@ export class RestablecerPage {
     correo: new FormControl('',[Validators.required,Validators.email])
   })
 
-  constructor(private navCtrl: NavController,private router: Router) { } 
+  constructor(private navCtrl: NavController,private router: Router, private alertController: AlertController) { } 
+
+
+
+  Fboton(){
+    this.presentAlert();
+  }
+
+
+
+  //alerta de correo enviado
+  async presentAlert(){
+    const alert = await this.alertController.create({
+      header: 'correo enviado',
+      subHeader: 'Infomación : ',
+      message: 'Revise su bandeja de email',
+      buttons: ['Aceptar'],
+    });
+    await alert.present();
+  }
+
+
+  
 
   
 

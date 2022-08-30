@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'login1',
+    redirectTo: 'restablecer',
     pathMatch: 'full'
   },
   {
@@ -38,10 +38,6 @@ const routes: Routes = [
   {
     path: 'mconductor1',
     loadChildren: () => import('./mconductor1/mconductor1.module').then( m => m.Mconductor1PageModule)
-  },
-  {
-    path: 'prototipo',
-    loadChildren: () => import('./prototipo/prototipo.module').then( m => m.PrototipoPageModule)
   },
   {
     path: 'prototipo1',

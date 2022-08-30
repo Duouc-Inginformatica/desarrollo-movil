@@ -10,28 +10,61 @@ import { Router,NavigationExtras } from '@angular/router';//permite que funcione
 })
 export class LoginPage {
 
+  valuea = 'conductor';
+  valueb = 'usuario';
 
   usuario = new FormGroup({
-    userp: new FormControl('',[Validators.required, Validators.minLength(4),Validators.maxLength(8)]),
-    passp: new FormControl('',[Validators.required, Validators.minLength(8)]),
+    user: new FormControl('',[Validators.required, Validators.minLength(4)]),
+    pass: new FormControl('',[Validators.required, Validators.minLength(4)]),
   });
 
-  constructor(private navCtrl: NavController,private router: Router) { }   //constructor que genrecio 
+  constructor(private navCtrl: NavController,private router: Router, private alertController: AlertController) { }   //constructor que genrecio 
   
     
   //funcion que permite el envio de datos
-  sendDetailsWithState() {
+  sendInfoPasajer() {
     let navigationExtras: NavigationExtras = {
-      state: {user: this.usuario.value.userp}
+      state: {user: this.usuario.value.user}
       };
       this.router.navigate(['/mpasajero'],navigationExtras);      
   }
 
+  sendInfoConductor() {
+    let navigationExtras: NavigationExtras = {
+      state: {user: this.usuario.value.user}
+      };
+      this.router.navigate(['/mconductor'],navigationExtras);      
+  }
+
+  validaciontipousuario(){
+    if('usuario'===this.usuario.value.user){
+      this.sendInfoPasajer()
+    }
+    else if('conductor'===this.usuario.value.user){
+      this.sendInfoConductor()
+    }
+    else{
+      this.presentAlert()
+    }
+  }
+
+
+
   //Metodo para navegar desde un metodo llamado desde el html
   InfoaMconductor(){
-    console.log("entramos al metodo");
-    this.sendDetailsWithState();
+    //console.log("entramos al metodo");
+    this.validaciontipousuario();
     // this.navCtrl.navigateForward('/home');
+  }
+
+  async presentAlert(){
+    const alert = await this.alertController.create({
+      header: 'Error Login',
+      subHeader: 'Infomación : ',
+      message: 'Usuario son incorrecto',
+      buttons: ['Aceptar'],
+    });
+    await alert.present();
   }
 
 }

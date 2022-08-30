@@ -21,23 +21,27 @@ export class MconductorPage {
         console.log("Dato a mostrar" + this.userConductor)     
         }
       });
+    }
+  }
+
+      /* this.activeroute.queryParams.subscribe(params => {
+        if (this.router.getCurrentNavigation().extras.state) {
+          this.userConductor = this.router.getCurrentNavigation().extras.state.user; 
+          console.log("Dato a mostrar" + this.userConductor)     
+          }
+        }); */
 
 
-      this.activeroute.queryParams.subscribe(params => {
+
+
+     /*  this.activeroute.queryParams.subscribe(params => {
         if (this.router.getCurrentNavigation().extras.state) {
           this.userConductor = this.router.getCurrentNavigation().extras.state.user.auto,
                               this.router.getCurrentNavigation().extras.state.user.patente; 
           console.log("Dato a mostrar" + this.userConductor)     
           }
         });
-    }
-    
+    } */
     
     
   
-  
-  }
-
-
- 
-
