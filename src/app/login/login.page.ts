@@ -28,6 +28,12 @@ export class LoginPage {
       };
       this.router.navigate(['/mpasajero'],navigationExtras);      
   }
+  sendInfoRestablecer() {
+    let navigationExtras: NavigationExtras = {
+      state: {user: this.usuario.value.user}
+      };
+      this.router.navigate(['/restablecer'],navigationExtras);      
+  }
 
   sendInfoConductor() {
     let navigationExtras: NavigationExtras = {

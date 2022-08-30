@@ -13,7 +13,7 @@
       </ion-card-header>
   
       <ion-card-content>
-        <h3>Menú Pasajero</h3>
+        <h3>Menu Principal</h3>
        </ion-card-content>
      </ion-card>
 
@@ -33,12 +33,12 @@
 
     <br>
     <br>
-   
     <div >
-      <ion-button expand="full"  type="submit" [disabled]="!usuario.valid" routerLink="/home">RouterLink</ion-button>
+      <ion-button expand="full"  type="submit" routerLink="/restablecer">Restablecer contraseña</ion-button>
     </div>
+    
     <div >
-      <ion-button expand="full"  type="submit" [disabled]="!usuario.valid" (click)="InfoaMconductor()" routerDirection="forward">Programacion</ion-button>
+      <ion-button expand="full"  type="submit" [disabled]="!usuario.valid" (click)="InfoaMconductor()" routerDirection="forward">iniciar sesión</ion-button>
     </div>
 </form>
 

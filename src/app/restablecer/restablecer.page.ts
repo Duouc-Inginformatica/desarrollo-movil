@@ -11,17 +11,29 @@ import { Router,NavigationExtras } from '@angular/router';//permite que funcione
 })
 export class RestablecerPage {
 
-  email = new FormGroup({
-    correo: new FormControl('',[Validators.required,Validators.email])
-  })
+  correop = 'correo@correo.cl';
 
-<<<<<<< HEAD
+  usuario = new FormGroup({
+    userp: new FormControl('',[Validators.required]),
+    
+  });
+
   constructor(private navCtrl: NavController,private router: Router, private alertController: AlertController) { } 
 
 
+  funcion1(){
+    if('correo@correo.cl'===this.usuario.value.userp){
+      this.presentAlert()
+      console.log('funciona')
+    }else{
+      this.presentAlert2()
+      console.log('no validado')
+    }
+  }
+
 
   Fboton(){
-    this.presentAlert();
+    this.funcion1();
   }
 
 
@@ -37,12 +49,13 @@ export class RestablecerPage {
     await alert.present();
   }
 
-
-  
-=======
-  constructor(private navCtrl: NavController,private router: Router) { } 
->>>>>>> 7756f45 (v2 logica registro y logica restablecer)
-
-  
-
+  async presentAlert2(){
+    const alert = await this.alertController.create({
+      header: 'correo invalido',
+      subHeader: 'Infomación : ',
+      message: 'vuelva a escribir su correo',
+      buttons: ['Aceptar'],
+    });
+    await alert.present();
+  }
 }
