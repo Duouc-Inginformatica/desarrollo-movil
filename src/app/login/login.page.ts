@@ -22,7 +22,7 @@ export class LoginPage {
   //funcion que permite el envio de datos
   sendDetailsWithState() {
     let navigationExtras: NavigationExtras = {
-      state: {user: this.usuario.value.userp}
+      state: {userp: this.usuario.value.userp}
       };
       this.router.navigate(['/mpasajero'],navigationExtras);      
   }
