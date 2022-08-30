@@ -21,7 +21,7 @@ USE
 
 MISSING FRAMEWORK
 
-- ng install 
+- npm install
 
 
 
