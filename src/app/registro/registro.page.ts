@@ -17,7 +17,6 @@ export class RegistroPage  {
       user: new FormControl('',[Validators.required, Validators.minLength(4),Validators.maxLength(8)]),
       Nombre: new FormControl ('',[Validators.required, Validators.minLength(3), Validators.maxLength(10)]),
       Apellido: new FormControl ('',[Validators.required, Validators.minLength(3), Validators.maxLength(10)]),
-      correo: new FormControl('', [Validators.required, Validators.email]),
       rut: new FormControl(''),
       sede:new FormControl('',[Validators.maxLength(3)]), 
       pass: new FormControl('',[Validators.required, Validators.minLength(4),Validators.maxLength(4)]),
