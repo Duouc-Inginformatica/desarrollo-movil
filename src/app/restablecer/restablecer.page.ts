@@ -22,7 +22,7 @@ export class RestablecerPage {
 
 
   funcion1(){
-    if('correo@correo.cl'===this.usuario.value.userp){
+    if('correo@xcorreo.cl'===this.usuario.value.userp){
       this.presentAlert()
       console.log('funciona')
     }else{
