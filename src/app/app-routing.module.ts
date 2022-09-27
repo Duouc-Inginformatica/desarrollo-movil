@@ -40,14 +40,6 @@ const routes: Routes = [
     loadChildren: () => import('./mconductor1/mconductor1.module').then( m => m.Mconductor1PageModule)
   },
   {
-    path: 'prototipo1',
-    loadChildren: () => import('./prototipo1/prototipo1.module').then( m => m.Prototipo1PageModule)
-  },
-  {
-    path: 'login1',
-    loadChildren: () => import('./login1/login1.module').then( m => m.Login1PageModule)
-  },
-  {
     path: 'restablecer',
     loadChildren: () => import('./restablecer/restablecer.module').then( m => m.RestablecerPageModule)
   },
