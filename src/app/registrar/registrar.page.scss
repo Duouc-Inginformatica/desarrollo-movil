@@ -25,7 +25,7 @@
 	color: white; 
 }
 
-#formLogin{
+#formRegister{
     margin-top: 15px;
     padding-left: 25px;
     padding-right: 25px;    
@@ -33,27 +33,9 @@
 
 }
 
-.formDetails{
+.formregisterdetails{
     border-radius: 10px;
     margin-top: 1px;
     margin: 5px;
        
     }
-
-.recoverDetails{
-	border-radius: 10px;
-    margin: -2rem;
-    margin-left: 1px;
-    margin-right: 1px;
-  
-}
-
-.helper {
-	border-radius: 7px;
-	margin-bottom: 5px;
-}
-
-.ripple-parent {
-    position: relative;
-    overflow: hidden;
-  }

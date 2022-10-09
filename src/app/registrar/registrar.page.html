@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>TeLlevoAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="bg-image no-scroll" padding>
+  <ion-card class="ion-text-center card" >  
+      <ion-card-content>
+        <h3>Menu registro</h3>
+       </ion-card-content>
+     </ion-card>
+  <form id="formRegister">
+    <ion-item class="formregisterdetails">
+      <ion-label position="floating">Nombe de usuario</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item class="formregisterdetails">
+      <ion-label position="floating">Nombre completo</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item class="formregisterdetails">
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item class="formregisterdetails">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-list class="formregisterdetails">
+          <ion-radio-group value="pasajero">
+            <ion-item>
+              <ion-label>Pasajero</ion-label>
+              <ion-radio slot="end" value="pasajero"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>Conductor</ion-label>
+              <ion-radio slot="end" value="conductor"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+        </ion-list>
+      </ion-col>
+      <ion-col class="formregisterdetails">
+        <ion-button type="ion-button" color="danger" expand="block">Registrar</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

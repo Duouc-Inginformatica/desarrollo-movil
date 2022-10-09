@@ -35,6 +35,13 @@ export class LoginPage {
       this.router.navigate(['/restablecer'],navigationExtras);      
   }
 
+  sendInfoRegistrar() {
+    let navigationExtras: NavigationExtras = {
+      state: {user: this.usuario.value.user}
+      };
+      this.router.navigate(['/registrar'],navigationExtras);      
+  }
+
   sendInfoConductor() {
     let navigationExtras: NavigationExtras = {
       state: {user: this.usuario.value.user}

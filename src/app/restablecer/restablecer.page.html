@@ -1,4 +1,4 @@
-<!--Página Login del menú Conductor-->
+
 
 <ion-header>
   <ion-toolbar>
@@ -21,7 +21,7 @@
 <form [formGroup]="usuario" >
   <div>
 
-    <ion-item>
+    <ion-item  class="formhelperdetails">
       <ion-label position="floating">Correo</ion-label>
       <ion-input  type="text" formControlName="userp"></ion-input>
     </ion-item>
@@ -31,7 +31,7 @@
     <br>
     <br>
     <div >
-      <ion-button expand="full"  type="submit" (click)="Fboton()">recuperar</ion-button>
+      <ion-button expand="full"  type="ion-button" color="danger" (click)="Fboton()">recuperar</ion-button>
     </div>
     
     
