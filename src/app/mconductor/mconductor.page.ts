@@ -30,13 +30,13 @@ export class MconductorPage {
 
     
 
-    mostrar(){
+   /*  mostrar(){
       this.presentAlert();
-    }
+    } */
 
 
       //Metodo de alerta
-    async presentAlert(){
+   /*  async presentAlert(){
       const alert = await this.alertController.create({
         header: 'Solicitud de Transporte',
         subHeader: 'Nombre : ' + this.userPasajero,
@@ -44,7 +44,7 @@ export class MconductorPage {
         buttons: ['Aceptar'],
       });
       await alert.present();
-    }
+    } */
 
   }
 

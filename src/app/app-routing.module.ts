@@ -47,6 +47,10 @@ const routes: Routes = [
     path: 'registrar',
     loadChildren: () => import('./registrar/registrar.module').then( m => m.RegistrarPageModule)
   },
+  {
+    path: 'mconductor2',
+    loadChildren: () => import('./mconductor2/mconductor2.module').then( m => m.Mconductor2PageModule)
+  },
 ];
 
 @NgModule({
