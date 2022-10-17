@@ -1,9 +1,33 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Mpasajero1</ion-title>
+    <ion-toolbar>
+    <ion-title>mpasajero2</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="bg-image no-scroll" padding>
 
+<ion-card class="ion-card-details">
+    <ion-card-header>
+      <ion-card-title><center>Lista de viajes</center></ion-card-title>
+      <ion-card-subtitle><center>Aquí puedes buscar tus viajes disponibles</center></ion-card-subtitle>
+    </ion-card-header>
+
+
+<ion-card-content>
+<ion-list>
+  <ion-item *ngFor="let item of data; let i = index">
+    <ion-label class="label-viaje-font-size"> Origen: Duoc Antonio Varas <br> Destino: {{ i + 1 }} </ion-label>
+  </ion-item>
+
+</ion-list>
+
+<ion-infinite-scroll threshold="50px" (ionInfinite)="loadData($event)">
+  <ion-infinite-scroll-content
+    loadingSpinner="crescent"
+    loadingText="Cargando...">
+  </ion-infinite-scroll-content>
+</ion-infinite-scroll>
+
+</ion-card-content>
+</ion-card>
 </ion-content>
