@@ -1,0 +1,19 @@
+.bg-image{
+    --background: url('../../assets/img/background.svg') no-repeat center center / cover;
+    
+}
+
+.card-header-confirmados{
+    margin-bottom: 30px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.429);
+    color: white; 
+}
+
+.no-scroll .scroll-content{
+    --overflow: hidden;
+}
+
+.card-viajes-confirmados{
+    font-size: 12px;
+}
