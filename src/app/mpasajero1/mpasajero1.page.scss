@@ -1,0 +1,21 @@
+.bg-image{
+    --background: url('../../assets/img/background.svg') no-repeat center center / cover;
+    
+}
+
+.no-scroll .scroll-content{
+    --overflow: hidden;
+}
+
+.ion-card-details{
+    margin-bottom: 100px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.429);
+    color: white; 
+   
+    }
+
+.label-viaje-font-size{
+    font-size: 10px;
+}
+    
