@@ -14,27 +14,32 @@
 - limitations under the License.
 -
 
-USE 
-======================================
--- ionic serve --lab
+# Transport DUOC #
 
+### USE ###
+```bash
+ionic serve --lab
+```
 
-MISSING FRAMEWORK
-
-- npm install 
-
-UPDATE FRAMEWORK (ONLY DEV)
+### MISSING FRAMEWORK ###
+```bash
+npm install 
+```
+### UPDATE FRAMEWORK (ONLY DEV) ###
+```bash
 - npm i -g npm-check-updates
 - ncu -u
 - npm install
+```
 
 
-BUILD APP (APK)
+### BUILD APP (APK) ###
+```bash
 - missing android studio
 - read https://capacitorjs.com/docs/android
+```
 
-
-THIS PROGRAM IS OPEN SOURCE PROJECT FOR FINAL TEST IN DUOC UC
+### THIS PROGRAM IS OPEN SOURCE PROJECT FOR FINAL TEST IN DUOC UC ###
 
 - sebastian
 - nicolas
