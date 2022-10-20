@@ -16,7 +16,7 @@
 
 USE 
 ======================================
-- ionic serve --lab
+-- ionic serve --lab
 
 
 MISSING FRAMEWORK
