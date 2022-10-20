@@ -21,8 +21,12 @@ USE
 
 MISSING FRAMEWORK
 
-- ng install 
+- npm install 
 
+UPDATE FRAMEWORK (ONLY DEV)
+- npm i -g npm-check-updates
+- ncu -u
+- npm install
 
 
 THIS PROGRAM IS OPEN SOURCE PROJECT FOR FINAL TEST IN DUOC UC
