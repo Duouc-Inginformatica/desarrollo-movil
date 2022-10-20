@@ -32,4 +32,5 @@ npm-debug.log*
 /www
 
 ## no push android dump files
-/android
+/android/
+/android/.

@@ -29,6 +29,11 @@ UPDATE FRAMEWORK (ONLY DEV)
 - npm install
 
 
+BUILD APP (APK)
+- missing android studio
+- read https://capacitorjs.com/docs/android
+
+
 THIS PROGRAM IS OPEN SOURCE PROJECT FOR FINAL TEST IN DUOC UC
 
 - sebastian
