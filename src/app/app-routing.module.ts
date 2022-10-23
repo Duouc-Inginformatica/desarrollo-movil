@@ -51,6 +51,10 @@ const routes: Routes = [
     path: 'mconductor2',
     loadChildren: () => import('./mconductor2/mconductor2.module').then( m => m.Mconductor2PageModule)
   },
+  {
+    path: 'noencontrado',
+    loadChildren: () => import('./noencontrado/noencontrado.module').then( m => m.NoencontradoPageModule)
+  },
 ];
 
 @NgModule({
