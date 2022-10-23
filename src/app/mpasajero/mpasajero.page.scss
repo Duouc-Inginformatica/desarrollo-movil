@@ -2,3 +2,24 @@
     --background: url('../../assets/img/background.svg') no-repeat center center / cover;
     
 }
+
+
+.no-scroll .scroll-content{
+    --overflow: hidden;
+}
+
+.card{
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.429);
+    color: white; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: smaller;
+}
+
+
+#peralta {
+    font-size: medium;
+}
