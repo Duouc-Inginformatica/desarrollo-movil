@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './guards/auth.guard'
 
 const routes: Routes = [
   {
@@ -21,23 +22,28 @@ const routes: Routes = [
   },
   {
     path: 'registro-v',
-    loadChildren: () => import('./registro-v/registro-v.module').then( m => m.RegistroVPageModule)
+    loadChildren: () => import('./registro-v/registro-v.module').then( m => m.RegistroVPageModule),
+    canActivate: [AuthGuard],
   },
   {
     path: 'mpasajero',
-    loadChildren: () => import('./mpasajero/mpasajero.module').then( m => m.MpasajeroPageModule)
+    loadChildren: () => import('./mpasajero/mpasajero.module').then( m => m.MpasajeroPageModule),
+    canActivate: [AuthGuard],
   },
   {
     path: 'mpasajero1',
-    loadChildren: () => import('./mpasajero1/mpasajero1.module').then( m => m.Mpasajero1PageModule)
+    loadChildren: () => import('./mpasajero1/mpasajero1.module').then( m => m.Mpasajero1PageModule),
+    canActivate: [AuthGuard],
   },
   {
     path: 'mconductor',
-    loadChildren: () => import('./mconductor/mconductor.module').then( m => m.MconductorPageModule)
+    loadChildren: () => import('./mconductor/mconductor.module').then( m => m.MconductorPageModule),
+    canActivate: [AuthGuard],
   },
   {
     path: 'mconductor1',
-    loadChildren: () => import('./mconductor1/mconductor1.module').then( m => m.Mconductor1PageModule)
+    loadChildren: () => import('./mconductor1/mconductor1.module').then( m => m.Mconductor1PageModule),
+    canActivate: [AuthGuard],
   },
   {
     path: 'restablecer',
@@ -49,11 +55,13 @@ const routes: Routes = [
   },
   {
     path: 'mconductor2',
-    loadChildren: () => import('./mconductor2/mconductor2.module').then( m => m.Mconductor2PageModule)
+    loadChildren: () => import('./mconductor2/mconductor2.module').then( m => m.Mconductor2PageModule),
+    canActivate: [AuthGuard],
   },
   {
     path: 'noencontrado',
-    loadChildren: () => import('./noencontrado/noencontrado.module').then( m => m.NoencontradoPageModule)
+    loadChildren: () => import('./noencontrado/noencontrado.module').then( m => m.NoencontradoPageModule),
+    canActivate: [AuthGuard],
   },
 ];
 
