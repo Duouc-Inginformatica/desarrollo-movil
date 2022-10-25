@@ -1,6 +1,6 @@
 .ion-padding{
   --background: url('../../assets/img/background.svg') no-repeat center center / cover;
-  
+
 }
 
 
@@ -15,27 +15,19 @@
   .no-scroll .scroll-content{
       --overflow: hidden;
   }
-  
+
   .card{
       border-color: rgba(0, 0, 0, 0);
       background-color: rgba(0, 0, 0, 0.429);
-      color: white; 
+      color: white;
       margin-top: 30px;
       margin-bottom: 40px;
       padding-left: 25px;
       padding-right: 25px;
   }
-  
+
   .input{
       border-color: rgba(0, 0, 0, 0);
       background-color: rgb(0, 0, 0);
-      color: white; 
-  }
-  
-  .formRegister{
-      margin-top: 15px;
-      padding-left: 25px;
-      padding-right: 25px;    
-      max-height: 20px;
-  
+      color: white;
   }
