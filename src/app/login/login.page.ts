@@ -18,46 +18,49 @@ export class LoginPage {
     pass: new FormControl('',[Validators.required, Validators.minLength(4)]),
   });
 
-  constructor(private navCtrl: NavController,private router: Router, private alertController: AlertController) { }   //constructor que genrecio 
-  
-    
+  constructor(private navCtrl: NavController,private router: Router, private alertController: AlertController) { }   //constructor que genrecio
+
+
   //funcion que permite el envio de datos
   sendInfoPasajer() {
     let navigationExtras: NavigationExtras = {
       state: {user: this.usuario.value.user}
       };
-      this.router.navigate(['/mpasajero'],navigationExtras);      
+      this.router.navigate(['/mpasajero'],navigationExtras);
   }
   sendInfoRestablecer() {
     let navigationExtras: NavigationExtras = {
       state: {user: this.usuario.value.user}
       };
-      this.router.navigate(['/restablecer'],navigationExtras);      
+      this.router.navigate(['/restablecer'],navigationExtras);
   }
 
   sendInfoRegistrar() {
     let navigationExtras: NavigationExtras = {
       state: {user: this.usuario.value.user}
       };
-      this.router.navigate(['/registrar'],navigationExtras);      
+      this.router.navigate(['/registrar'],navigationExtras);
   }
 
   sendInfoConductor() {
     let navigationExtras: NavigationExtras = {
       state: {user: this.usuario.value.user}
       };
-      this.router.navigate(['/mconductor'],navigationExtras);      
+      this.router.navigate(['/mconductor'],navigationExtras);
   }
 
   validaciontipousuario(){
     if('usuario'===this.usuario.value.user){
-      this.sendInfoPasajer()
+      this.sendInfoPasajer();
+      localStorage.setItem('logined','true');
     }
     else if('conductor'===this.usuario.value.user){
-      this.sendInfoConductor()
+      this.sendInfoConductor();
+      localStorage.setItem('logined','true');
     }
     else{
-      this.presentAlert()
+      this.presentAlert();
+      localStorage.removeItem('logined');
     }
   }
 
