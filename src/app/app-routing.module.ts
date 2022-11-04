@@ -54,7 +54,11 @@ const routes: Routes = [
   {
     path: 'restablecer',
     loadChildren: () => import('./restablecer/restablecer.module').then( m => m.RestablecerPageModule)
+  },  {
+    path: 'gps',
+    loadChildren: () => import('./gps/gps.module').then( m => m.GpsPageModule)
   },
+
 ];
 
 @NgModule({
