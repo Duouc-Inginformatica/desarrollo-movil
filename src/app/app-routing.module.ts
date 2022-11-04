@@ -63,6 +63,11 @@ const routes: Routes = [
     loadChildren: () => import('./noencontrado/noencontrado.module').then( m => m.NoencontradoPageModule),
     canActivate: [AuthGuard],
   },
+  {
+    path: 'gps',
+    loadChildren: () => import('./gps/gps.module').then( m => m.GpsPageModule),
+    canActivate: [AuthGuard],
+  },
 ];
 
 @NgModule({
