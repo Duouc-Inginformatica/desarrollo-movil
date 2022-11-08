@@ -64,8 +64,8 @@ const routes: Routes = [
     canActivate: [AuthGuard],
   },
   {
-    path: 'gps',
-    loadChildren: () => import('./gps/gps.module').then( m => m.GpsPageModule),
+    path: 'map',
+    loadChildren: () => import('./map/map.module').then( m => m.MapPageModule),
     canActivate: [AuthGuard],
   },
 ];
