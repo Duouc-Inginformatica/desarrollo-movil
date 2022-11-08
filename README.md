@@ -24,6 +24,7 @@ npm install
 ```bash
 - missing android studio
 - read https://capacitorjs.com/docs/android
+-https://capacitorjs.com/docs/cordova/migrating-from-cordova-to-capacitor
 ```
 
 ### THIS PROGRAM IS OPEN SOURCE PROJECT FOR FINAL TEST IN DUOC UC ###
