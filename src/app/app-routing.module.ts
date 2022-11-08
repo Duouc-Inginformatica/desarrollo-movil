@@ -36,6 +36,11 @@ const routes: Routes = [
     canActivate: [AuthGuard],
   },
   {
+    path: 'mpasajero2',
+    loadChildren: () => import('./mpasajero2/mpasajero2.module').then( m => m.Mpasajero2PageModule),
+    canActivate: [AuthGuard],
+  },
+  {
     path: 'mconductor',
     loadChildren: () => import('./mconductor/mconductor.module').then( m => m.MconductorPageModule),
     canActivate: [AuthGuard],
