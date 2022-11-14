@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { Prototipo1PageRoutingModule } from './prototipo1-routing.module';
+import { Mconductor2PageRoutingModule } from './mconductor2-routing.module';
 
-import { Prototipo1Page } from './prototipo1.page';
+import { Mconductor2Page } from './mconductor2.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    Prototipo1PageRoutingModule
+    Mconductor2PageRoutingModule
   ],
-  declarations: [Prototipo1Page]
+  declarations: [Mconductor2Page]
 })
-export class Prototipo1PageModule {}
+export class Mconductor2PageModule {}

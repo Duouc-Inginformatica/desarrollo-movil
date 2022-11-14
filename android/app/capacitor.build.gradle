@@ -15,7 +15,11 @@ dependencies {
     implementation project(':capacitor-haptics')
     implementation project(':capacitor-keyboard')
     implementation project(':capacitor-status-bar')
+<<<<<<< HEAD
     implementation "com.airbnb.android:lottie:3.5.0"
+=======
+
+>>>>>>> main
 }
 
 

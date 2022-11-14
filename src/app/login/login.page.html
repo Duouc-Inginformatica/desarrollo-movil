@@ -7,7 +7,7 @@
 </ion-header>
 
 <ion-content class="bg-image no-scroll" padding>
-  <ion-card class="ion-text-center card">
+  <ion-card class="ion-text-center card" >
     <ion-card-header>
       <ion-card-subtitle>TeLlevoAPP</ion-card-subtitle>
       </ion-card-header>
@@ -20,7 +20,6 @@
 
 <form [formGroup]="usuario" id="formLogin">
   <div>
-
     <ion-item class="formDetails">
       <ion-label position="floating">Usuario</ion-label>
       <ion-input  type="text" formControlName="user"></ion-input>
@@ -35,12 +34,10 @@
     <br>
 
     <div  class="recoverDetails">
-    <div>
-      <ion-button expand="full"  type="submit" [disabled]="!usuario.valid" (click)="InfoaMconductor()" routerDirection="forward ">Iniciar sesión</ion-button>
-    </div>
-    
-    <div class="recover-block" >
-      <ion-button expand="full"  type="submit" routerLink="/restablecer">Restablecer contraseña</ion-button>
+    <div>  
+      <ion-button expand="block" type="ion-button" [disabled]="!usuario.valid" (click)="InfoaMconductor()" routerDirection="forward ">Iniciar sesión</ion-button>
+      <ion-button expand="block"  size="small" color="danger" type="summit" fill="clear" class=" recover-block helper normal-text" routerLink="/restablecer">Restablecer contraseña</ion-button>
+      <ion-button expand="block" type="ion-button"   routerDirection="forward" routerLink="/registrar">Registrar</ion-button>
     </div>
   </div>
     

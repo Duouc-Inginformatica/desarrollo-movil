@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
+import { NoencontradoPage } from './noencontrado.page';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { NoencontradoPageRoutingModule } from './noencontrado-routing.module';
 
 
 
@@ -13,8 +13,8 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    NoencontradoPageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [NoencontradoPage]
 })
-export class HomePageModule {}
+export class NoencontradoPageModule {}

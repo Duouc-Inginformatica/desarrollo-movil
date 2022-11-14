@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { RegistroVPage } from './registro-v.page';
+import { MapPage } from './map.page';
 
-describe('RegistroVPage', () => {
-  let component: RegistroVPage;
-  let fixture: ComponentFixture<RegistroVPage>;
+describe('MapPage', () => {
+  let component: MapPage;
+  let fixture: ComponentFixture<MapPage>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ RegistroVPage ],
+      declarations: [ MapPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(RegistroVPage);
+    fixture = TestBed.createComponent(MapPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

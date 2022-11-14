@@ -5,16 +5,18 @@
 </ion-header>
 
 <ion-content class="ion-padding ion-text-center">
-  <ion-card class="ion-text-center">
+  <ion-card class="ion-text-center card ">
     <ion-card-header>
-      <ion-card-title>Eres Bienvenid@</ion-card-title>
+      <ion-card-title id="size">Eres Bienvenid@</ion-card-title>
       <ion-card-subtitle>Informacion adicional</ion-card-subtitle>
       <ion-card-subtitle>Usuario : {{userConductor}} </ion-card-subtitle>
       <ion-card-subtitle>Auto : {{userCvehiculo}} </ion-card-subtitle>
-      <ion-card-subtitle>Patente : {{userCpatente}} </ion-card-subtitle>  
+      <ion-card-subtitle>Patente : {{userCpatente}} </ion-card-subtitle>
     </ion-card-header>
   </ion-card>
-  <div >
-    <ion-button expand="full"  type="submit" (click) = "mostrar()">Mostrar Pasajero</ion-button>
-  </div>
+  <form id="formRegister">
+    <ion-col>
+      <ion-button expand="block" routerLink="/mconductor1" type="button" color="success">Iniciar viaje</ion-button>
+    </ion-col>
+  </form>
 </ion-content>

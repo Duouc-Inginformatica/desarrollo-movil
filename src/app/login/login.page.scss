@@ -41,8 +41,19 @@
     }
 
 .recoverDetails{
+	border-radius: 10px;
     margin: -2rem;
     margin-left: 1px;
     margin-right: 1px;
   
 }
+
+.helper {
+	border-radius: 7px;
+	margin-bottom: 5px;
+}
+
+.ripple-parent {
+    position: relative;
+    overflow: hidden;
+  }

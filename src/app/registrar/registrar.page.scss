@@ -1,6 +1,5 @@
 //clases creadas por Jose para backgrounds de login
 
-//Imagen de fondo
 .bg-image{
     --background: url('../../assets/img/background.svg') no-repeat center center / cover;
     
@@ -15,7 +14,7 @@
 	background-color: rgba(0, 0, 0, 0.429);
 	color: white; 
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding-left: 25px;
     padding-right: 25px;
 }
@@ -24,38 +23,19 @@
     border-color: rgba(0, 0, 0, 0);
 	background-color: rgb(0, 0, 0);
 	color: white; 
-    text-align: center;
 }
 
-#formLogin{
+#formRegister{
     margin-top: 15px;
     padding-left: 25px;
-    padding-right: 25px;
-     
+    padding-right: 25px;    
+    max-height: 20px;
+
 }
 
-.formDetails{
+.formregisterdetails{
     border-radius: 10px;
     margin-top: 1px;
     margin: 5px;
        
     }
-
-#footerDetails{
-    margin-top: 15px !important;
-    margin-top: 5px !important;
-    border-radius: 3rem !important;
-    margin-top: 1px !important;
-    }
-
-.header-text{
-    color: rgb(216, 216, 216)
-}
-
-.recover-pass-text{
-    margin-top: 10px;
-    font-size: 12px;
-    text-align: center;
-    }
-
-

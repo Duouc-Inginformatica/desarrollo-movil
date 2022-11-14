@@ -1,9 +1,45 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Mconductor1</ion-title>
+    <ion-title>Crear Viaje</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding ion-text-center">
+  <ion-card class="ion-text-center card" >
+    <ion-card-header>
+      <ion-card-subtitle>Te llevo APP</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <h3>Crear viaje</h3>
+       </ion-card-content>
+     </ion-card>
+<form id="formRegister">
+  <ion-item class="formregisterdetails">
+    <ion-label position="floating">Destino</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item class="formregisterdetails" >
+    <ion-label position="floating">Costo por Pasajero</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <br>
+  <ion-datetime-button datetime="datetime"></ion-datetime-button>
+  <ion-modal [keepContentsMounted]="true">
+    <ng-template>
+      <ion-datetime id="datetime" ></ion-datetime>
+    </ng-template>
+  </ion-modal>
+  <br>
+  <ion-item class="formregisterdetails">
+    <ion-label>C/Pasajeros</ion-label>
+    <ion-input expand="block" type="number" placeholder="000" max="4" min="0"></ion-input>
+  </ion-item>
+<ion-col>
+  <ion-button expand="block" routerLink="/mconductor2" type="button">Iniciar Viaje</ion-button>
+</ion-col>
+</form>
+
+
 
 </ion-content>
